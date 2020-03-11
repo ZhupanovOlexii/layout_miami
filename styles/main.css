@@ -1,3 +1,21 @@
+html,
+body,
+ul,
+li,
+button,
+input,
+textarea,
+h1,
+h2,
+h3 {
+  margin: auto;
+  padding: 0;
+  font-size: 16px;
+  line-height: inherit; }
+
+body {
+  line-height: 1.5; }
+
 h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 400; }
@@ -7,6 +25,94 @@ h1 {
   src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+
+.nav {
+  color: white;
+  text-transform: uppercase; }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    list-style: none; }
+  .nav__item {
+    padding: 8px 24px;
+    margin: 0 38px; }
+    .nav__item_active {
+      background-color: rgba(45, 45, 45, 0.5);
+      border-radius: 8px; }
+  .nav__link {
+    color: white;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s; }
+    .nav__link:hover {
+      color: #9fadc2; }
+
+@media screen and (max-width: 890px) {
+  .nav__list {
+    display: none; } }
+
+.header {
+  height: 700px;
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  font-weight: bold;
+  line-height: 1; }
+  .header__nav {
+    position: absolute;
+    bottom: 48px;
+    left: 0;
+    right: 0; }
+  .header__top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: white; }
+  .header__phone, .header__action {
+    margin: 46px 120px;
+    padding: 10px; }
+  .header__tittle {
+    position: absolute;
+    top: 414px;
+    font-size: 60px;
+    color: white;
+    margin-left: 120px; }
+    .header__tittle:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -16px;
+      width: 35px;
+      height: 2px;
+      border-radius: 2px;
+      background-color: white; }
+  .header__link {
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+    text-transform: uppercase;
+    cursor: pointer; }
+    .header__link:hover {
+      color: #9fadc2; }
+
+.logo {
+  width: 115px;
+  height: 76px;
+  background-image: url("../images/logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 24px; }
 
 body {
   background: #eee; }
