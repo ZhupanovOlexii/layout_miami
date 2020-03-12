@@ -56,9 +56,15 @@ h1 {
     .nav__link:hover {
       color: #9fadc2; }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 910px) {
   .nav__list {
-    display: none; } }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; } }
 
 .header {
   height: 700px;
@@ -83,12 +89,30 @@ h1 {
   .header__phone, .header__action {
     margin: 46px 120px;
     padding: 10px; }
+  .header__phone-icon::before {
+    display: none;
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    background: url(../images/phone-icon.png) no-repeat center;
+    background-size: cover;
+    cursor: pointer; }
+  .header__link-icon::before {
+    display: none;
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    background: url(../images/menu-icon.png) no-repeat center;
+    background-size: cover;
+    cursor: pointer; }
   .header__tittle {
     position: absolute;
-    top: 414px;
+    top: 420px;
     font-size: 60px;
     color: white;
-    margin-left: 120px; }
+    margin-left: 100px; }
     .header__tittle:before {
       content: "";
       position: absolute;
@@ -112,9 +136,24 @@ h1 {
 .header__phone-link {
   color: white; }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 910px) {
+  .header__tittle {
+    font-size: 46px;
+    line-height: 40px;
+    margin-left: 20px;
+    bottom: 20px; }
   .header__phone, .header__action {
     display: none; }
+  .header__phone-icon::before {
+    display: block;
+    position: absolute;
+    top: 45px;
+    left: 25px; }
+  .header__link-icon::before {
+    display: block;
+    position: absolute;
+    top: 45px;
+    right: 25px; }
   .header__top {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -138,7 +177,7 @@ h1 {
     margin: auto;
     top: -0.5em; }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 910px) {
   .section {
     padding-left: 40px;
     padding-right: 40px; } }
@@ -163,7 +202,7 @@ h1 {
     line-height: 30px;
     text-decoration: none; }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 910px) {
   .info {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -208,16 +247,24 @@ h1 {
        object-position: center; }
   .photos__wide_left .photos__img:first-child {
     width: calc(67% - 10px); }
+    @media (max-width: 910px) {
+      .photos__wide_left .photos__img:first-child {
+        width: calc(50% - 10px); } }
   .photos__wide_left .photos__img:last-child {
     width: calc(33% - 10px); }
+    @media (max-width: 910px) {
+      .photos__wide_left .photos__img:last-child {
+        width: calc(50% - 10px); } }
   .photos__wide_right .photos__img:first-child {
     width: calc(33% - 10px); }
+    @media (max-width: 910px) {
+      .photos__wide_right .photos__img:first-child {
+        width: calc(50% - 10px); } }
   .photos__wide_right .photos__img:last-child {
     width: calc(67% - 10px); }
-
-@media screen and (max-width: 890px) {
-  .photos {
-    display: block; } }
+    @media (max-width: 910px) {
+      .photos__wide_right .photos__img:last-child {
+        width: calc(50% - 10px); } }
 
 .gallery__caption {
   margin: 12px 0 35px; }
@@ -258,7 +305,7 @@ h1 {
   .consultation__form {
     width: 413px; }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 910px) {
   .consultation {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -314,7 +361,7 @@ h1 {
     line-height: 14px;
     margin-bottom: 6px; }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 910px) {
   .input {
     margin-top: 10px; } }
 
@@ -326,7 +373,7 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center; }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 910px) {
   .testimonials {
     grid-template-columns: 1fr; } }
 
@@ -368,7 +415,7 @@ h1 {
     color: #9fadc2;
     margin-bottom: 8px; }
 
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 910px) {
   .contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
