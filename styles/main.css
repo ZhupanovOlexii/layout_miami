@@ -79,8 +79,7 @@ h1 {
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between;
-    color: white; }
+            justify-content: space-between; }
   .header__phone, .header__action {
     margin: 46px 120px;
     padding: 10px; }
@@ -109,6 +108,17 @@ h1 {
     cursor: pointer; }
     .header__link:hover {
       color: #9fadc2; }
+
+.header__phone-link {
+  color: white; }
+
+@media screen and (max-width: 890px) {
+  .header__phone, .header__action {
+    display: none; }
+  .header__top {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; } }
 
 .logo {
   width: 115px;
@@ -226,6 +236,7 @@ h1 {
   -webkit-transition: background-color 0.2s;
   transition: background-color 0.2s;
   padding: 19px 62px;
+  margin-top: 20px;
   text-transform: uppercase; }
   .button:hover {
     background-color: #0075ff;
@@ -301,7 +312,11 @@ h1 {
     height: 144px;
     font-size: 14px;
     line-height: 14px;
-    margin-bottom: 32px; }
+    margin-bottom: 6px; }
+
+@media screen and (max-width: 890px) {
+  .input {
+    margin-top: 10px; } }
 
 .testimonials {
   display: grid;
@@ -358,7 +373,12 @@ h1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; } }
+            flex-direction: column; }
+    .contact__text {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .footer {
   height: 359px;
@@ -374,6 +394,7 @@ h1 {
     margin: auto; }
 
 body {
+  font-family: "Roboto", sans-serif;
   background: #eee; }
 
 /*# sourceMappingURL=main.css.map */
