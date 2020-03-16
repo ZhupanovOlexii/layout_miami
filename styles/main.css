@@ -61,8 +61,15 @@ h1 {
   position: absolute;
   top: -100%; }
 
-.menu__footer {
-  display: none; }
+.nav__footer {
+  display: none;
+  margin-top: 20px;
+  padding-left: 24px; }
+  .nav__footer .nav__link-phone,
+  .nav__footer .nav__link-active {
+    font-size: 14px;
+    line-height: 16px;
+    color: white; }
 
 @media screen and (max-width: 768px) {
   .nav__list {
@@ -83,6 +90,7 @@ h1 {
     font-size: 22px;
     line-height: 22px;
     padding: 10px 0;
+    margin-bottom: -70px;
     list-style: none;
     background-color: blue;
     border-radius: 20px;
@@ -132,12 +140,23 @@ h1 {
   .menu__btn {
     display: block;
     position: absolute;
-    top: 120px;
+    top: 40px;
     right: 40px;
     width: 30px;
     height: 30px;
     cursor: pointer;
     z-index: 3; }
+  .nav__footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start; }
   .header__nav {
     position: relative; } }
 
@@ -176,7 +195,7 @@ h1 {
     cursor: pointer; }
   .header__tittle {
     position: absolute;
-    top: 420px;
+    top: 440px;
     font-size: 60px;
     color: white; }
     .header__tittle:before {
@@ -201,16 +220,16 @@ h1 {
 
 @media screen and (max-width: 768px) {
   .header__tittle {
+    position: relative;
     font-size: 46px;
     line-height: 40px;
-    margin-left: 40px;
-    bottom: 20px; }
+    margin-left: 40px; }
   .header__phone, .header__action {
     display: none; }
   .header__phone-icon::before {
     display: block;
     position: absolute;
-    top: 45px;
+    top: 30px;
     left: 25px; }
   .header__top {
     -webkit-box-pack: center;
