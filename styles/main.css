@@ -77,6 +77,9 @@ h1 {
     font-size: 14px;
     line-height: 16px;
     color: white; }
+    .nav__footer .nav__link-phone:hover,
+    .nav__footer .nav__link-active:hover {
+      color: #9fadc2; }
 
 @media screen and (max-width: 930px) {
   .nav__list {
@@ -103,10 +106,8 @@ h1 {
     padding: 10px 0;
     margin-bottom: -50px;
     list-style: none;
-    background-color: #6565b6;
-    z-index: 1;
-    -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s; }
+    background-color: #8484e6;
+    z-index: 1; }
   .nav__link {
     display: block;
     padding: 12px 24px;
@@ -147,8 +148,12 @@ h1 {
     -webkit-transform: rotate(90deg);
             transform: rotate(90deg); }
   .menu__toggle:checked ~ .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     visibility: visible;
-    top: 0; }
+    top: 0;
+    z-index: 2; }
   .menu__btn {
     display: block;
     position: absolute;
@@ -245,7 +250,8 @@ h1 {
   .header__link {
     opacity: 0; }
   .header__phone-icon {
-    opacity: 1; }
+    opacity: 1;
+    z-index: 2; }
   .header__top {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
