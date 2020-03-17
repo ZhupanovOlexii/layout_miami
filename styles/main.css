@@ -447,19 +447,19 @@ h1 {
   margin-bottom: 10px; }
   .input::-webkit-input-placeholder {
     padding-left: 0;
-    color: black; }
+    color: #b9c1ce; }
   .input::-moz-placeholder {
     padding-left: 0;
-    color: black; }
+    color: #b9c1ce; }
   .input:-ms-input-placeholder {
     padding-left: 0;
-    color: black; }
+    color: #b9c1ce; }
   .input::-ms-input-placeholder {
     padding-left: 0;
-    color: black; }
+    color: #b9c1ce; }
   .input::placeholder {
     padding-left: 0;
-    color: black; }
+    color: #b9c1ce; }
   .input__textarea {
     font-family: "Roboto", sans-serif;
     padding-top: 10px;
@@ -526,8 +526,12 @@ h1 {
     width: 413px;
     margin-bottom: 32px; }
   .contact__text_items {
-    color: #3e3e3e;
+    color: #9fadc2;
     margin-bottom: 8px; }
+  .contact__text-address {
+    font-size: 16px;
+    line-height: 27px;
+    color: #3e3e3e; }
 
 @media screen and (max-width: 930px) {
   .contact {
